@@ -1,11 +1,12 @@
 .hero{
         max-width: 100%;
-        
         padding-top: 118px;
         padding-bottom: 118px;
-        margin:  0 ;
+        margin-right: auto;
+        margin-left: auto;
         text-align: center;
         background-image:  linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/Hero/hero-mob-1x.jpg); 
+        background-size: 100% ;
         background-repeat: no-repeat;
         background-position: center; 
     @media (min-device-pixel-ratio: 2),
@@ -54,6 +55,7 @@
     }      
     &_title{
         max-width: 100%;
+        margin: 0px;
         margin-bottom: 30px;
         flex-wrap: wrap;
         color: var(--primary-white-color);
