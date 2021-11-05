@@ -1,0 +1,41 @@
+.check-text {
+            @include font(14px, 1.2);
+            color: var(--primary-text-color);
+            display: flex;
+            position: relative;
+        @media screen and (min-width:480px) and (max-width:1199px) {
+            @include font(12px, 1.17);
+            
+        } 
+
+    & span {
+            width: 16px;
+            height: 15px;
+            border: 2px solid #212121;
+            border-radius: 3px;
+            margin-right: 9px;
+            margin-left: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        @media screen and (min-width:1200px) {
+            margin-left: 52px;
+        }    
+    }
+    .modal-checkbox:checked + & span {
+        background-color: var(--accent-color);
+        fill: var(--primary-white-color);
+        border: none;
+    }
+}
+
+.check-icon{
+        margin: 0 auto;
+        width: 16px;
+        height: 15px;
+        fill: var(--primary-white-color);
+}
+
+.contract{
+        color: var(--accent-color);
+}

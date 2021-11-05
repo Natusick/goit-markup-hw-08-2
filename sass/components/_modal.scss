@@ -1,0 +1,41 @@
+.is-hidden{
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+.modal{
+            position: relative;
+            transform: scale(1) rotate(0);
+            transition: transform 250ms ease;
+            margin: 0 auto;
+            width: 100%;
+            min-height: 581px;
+            border-radius: 4px;
+            background-color: var(--primary-white-color);
+            box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+                        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+                        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        
+        @media screen and (min-width:480px) and (max-width:1199px) {
+            width: 450px;
+        } 
+
+        @media screen and (min-width:1200px)  {
+            width: 528px;; 
+        }
+
+    &_title{
+            padding-top: 40px;
+            padding-bottom: 12px;
+            padding: 40px 40px 12px 40px;
+            font-weight: 700;
+            @include font(20px, 1.5);
+            text-align: center;
+            color: var(--primery-text-color);
+        @media screen and (min-width:1200px) {
+            @include font(20px, 1.17);
+            margin-left: 0px; 
+        } 
+    }
+}
+

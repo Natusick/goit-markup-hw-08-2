@@ -1,0 +1,60 @@
+.clients{
+            display: flex;
+            flex-wrap: wrap;
+        @media screen and (min-width: 480px){
+            margin: -15px;
+        }
+
+    &_title{
+            text-align: center;
+        @media screen and (max-width: 1199px){
+            padding-bottom: 30px;
+            @include font(28px, 1.17);
+        }
+
+        @media screen and (min-width: 1200px){
+            padding-bottom: 50px;
+            @include font(36px, 1.17);
+        }
+    }
+
+    &_icon{
+        max-width: 100%;
+        max-height: 92px;
+        display: flex;
+        padding-top: 16px;
+        justify-content: center;
+        border-radius: 4px;
+        border: 1px solid #AFB1B8;
+        padding: 16px auto; 
+        fill: #AFB1B8;
+        background-color: var(--primary-white-color);    
+        transition: 250ms var(--optimal-transition);
+    
+    }
+}
+
+.clients_icon:hover,
+.clients_icon:focus{
+    fill: var(--accent-color);
+    border: 2px solid var(--accent-color);   
+}
+    
+.clients_block{
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;  
+    
+    @media screen and (min-width: 768px){
+        width: calc((100% - 6 * 15px) / 3);
+        margin: 15px;  
+    }
+    
+    @media screen and (min-width: 1200px){
+        width: calc((100% - 12 * 15px) / 6);
+        margin: 15px;  
+    }
+}
+
+
+
+

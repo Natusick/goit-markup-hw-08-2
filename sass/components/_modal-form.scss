@@ -1,0 +1,83 @@
+.modal_form{
+            display: block;
+            padding-bottom: 10px;
+}
+
+.label{
+            padding-bottom: 4px;
+            padding-left: 40px;
+            display: block;
+            font-weight: 400;
+            @include font(12px, 1.17);
+            color: var(--title-text-color);
+
+    &_input{
+            display: block;
+            position: relative;
+       
+    }
+}
+.form-input{
+            margin-left: 40px;
+            padding-left: 42px;
+            outline: none;
+            width: 100%;
+            height: 40px;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 4px;
+            transition: 250ms var(--optimal-transition);
+        @media screen and (min-width:480px) and (max-width:1199px) {
+                width: 370px;; 
+            } 
+        @media screen and (min-width:1200px) {
+                width: 448px;
+            } 
+    &:focus,
+    &:hover {
+        border-color: var(--accent-color);
+    }
+}
+
+.text-input{
+            width: 100%;
+            height: 120px;
+            margin-left: 40px;
+            margin-bottom: 20px;
+            padding: 12px 16px;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 4px;
+            outline: none;
+            @include font(12px, 1.17);
+            letter-spacing: 0.01em;
+            background: transparent;
+            color: #757575;
+            resize: none;
+            transition: 250ms var(--optimal-transition);
+ 
+        @media screen and (min-width:480px) and (max-width:1199px) {
+            width: 370px;; 
+        } 
+        @media screen and (min-width:1200px) {
+            width: 448px;
+        }
+    &:focus,
+    &:hover{
+        border-color: var(--accent-color);
+    }
+}       
+.input-icon{
+    position: absolute;
+    left: 53px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 250ms var(--optimal-transition);
+
+    .form-input:focus + &,
+    .form-input:hover + &{
+        fill: var(--accent-color);
+    }
+}
+
+
+
+    

@@ -1,0 +1,12 @@
+.button{
+        border-radius: 4px;
+        display: inline-block;
+        border: 1px solid transparent;
+        transition: 250ms var(--optimal-transition);
+
+    &:hover,
+    &:focus{
+        color:var(--primary-white-color);
+        background-color: var(--accent-color);
+    }
+}

@@ -1,0 +1,21 @@
+body{  
+    color: var(--primery-text-color);
+    font-family: Roboto; 
+    background-color: var(--primary-white-color);
+    cursor: pointer;
+    letter-spacing: 0.03em;
+}
+
+.link{
+    text-decoration: none;
+
+    &:hover,
+    &:link:focus {
+        color: var(--accent-color);
+        fill: var(--accent-color);
+    }
+}
+
+.list{
+    list-style: none;
+}

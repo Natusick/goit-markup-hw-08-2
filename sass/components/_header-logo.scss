@@ -1,0 +1,40 @@
+.logo{
+    text-decoration: none;
+    color:var(--accent-color);
+    font-family: Raleway; 
+    font-weight: 700;
+    @media (min-width: 1200px) {
+        @include font(26px, 1.19);
+    }
+
+   
+    
+    &_black{
+        color: #000;
+
+        @media (min-width: 1200px) {
+            @include font(26px, 1.38);
+        }
+    }
+}
+
+.header-logo{
+    @extend %flex-box;
+    @media (min-width: 768px) {
+        margin-right: 88px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-right: 93px;
+    }
+    
+    @media (min-width: 480px) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    @media (min-width: 768px) {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+}

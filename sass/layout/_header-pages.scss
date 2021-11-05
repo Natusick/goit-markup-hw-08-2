@@ -1,0 +1,35 @@
+.page-header{
+        display: flex;
+    @media (max-width: 767px) {
+        display: none;  
+    }
+}
+
+.page-item{
+        margin-right: 50px;
+    
+    &:last-child{
+        margin-right:0;
+    }
+
+    &_nav{
+        display: block;
+        position: relative;
+        color: var(--primary-text-color) ;
+        font-weight: 500;
+        @include font(14px, 1.14);
+        letter-spacing: 0.02em;
+        transition: 250ms var(--optimal-transition);
+    }
+}
+
+.current::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    margin-top: 31px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    display: block;
+}

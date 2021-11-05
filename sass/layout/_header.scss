@@ -1,0 +1,13 @@
+.header{
+        height: auto;
+        border-bottom: 1px solid #ECECEC;   
+
+    &_nav{
+        @extend %flex-box;
+     }
+}
+
+.main-nav{
+    display: flex;
+}
+

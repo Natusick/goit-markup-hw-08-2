@@ -1,0 +1,94 @@
+.text-block{
+        display:inline-block;   
+}
+
+.projects_icon{
+           
+        @media screen  and (max-width: 767px){
+            justify-content: center;
+           }
+        @media screen and (min-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+        }
+
+    &> .projects_icons-item{
+        @media screen and (min-width:768px) {
+            width: calc((100% - 4 * 15px)/ 2);
+            margin: 15px;
+        }
+
+        @media screen and (min-width:1200px) {
+            width: calc((100% - 6 * 15px)/ 3);
+            margin: 15px;
+        }
+    }
+}
+
+.projects_icons-item{
+            width: 100%;
+            border: 1px solid #EEEEEE; 
+        
+        @media screen and (max-width:767px) {
+           margin-bottom: 30px;
+        
+        &:last-child{
+            margin-bottom: 0px;   
+        }
+        }
+    
+    
+
+    &:focus,
+    &:hover {
+        box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+                    0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+                    0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+        }
+}
+
+.projects_link{
+        display: block;
+        margin: 0;
+        width: 100%;
+        max-height: 294px;
+}
+
+.text-wrapper{
+        position: relative;
+        overflow: hidden;
+}
+
+.top-text{
+        position: absolute;
+        transform: translateY(100%) ;
+        transition: transform 250ms var(--optimal-transition);
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        padding: 63px 24px 63px 24px ;
+        font-size: 18px;
+        line-height: 1.56;
+        background-color: rgba(33, 150, 243, 0.9);
+        color: var(--primary-white-color);
+
+    .projects_icons-item:hover & {
+        transform: translateY(0%);
+    }
+}
+.projects_title{
+        padding-top: 20px;
+        padding-left: 24px;
+        padding-right: 24px;
+        color: var(--primary-text-color);
+        font-weight: 700;
+        @include font(18px, 2.0);
+        letter-spacing: 0.06em;    
+}
+
+.projects_text{
+        padding: 4px 24px 20px 24px;
+        color: var(--title-text-color);
+        @include font(16px, 1.87);
+}
